@@ -1,3 +1,15 @@
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2022 codewithsadee
+ */
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
 :root {
   /**
    * colors
@@ -81,17 +93,6 @@
   --transition: 0.25s ease;
   --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
 }
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
 
 /*-----------------------------------*\
   #RESET
@@ -507,12 +508,6 @@ body {
   padding: 12px;
   border-radius: 50%;
   transition: var(--transition);
-  height: 40px;
-  width: 40px;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
 }
 
 .doctor-card .card-social-link:is(:hover, :focus) {
@@ -528,14 +523,12 @@ body {
   padding-block-end: 40px;
   margin-block-end: -20px;
   scroll-snap-type: inline mandatory;
-  align-items: center;
-  justify-content: center;
 }
 
-/* .scrollbar-item {
+.scrollbar-item {
   min-width: 100%;
   scroll-snap-align: start;
-} */
+}
 
 .has-scrollbar::-webkit-scrollbar {
   height: 10px;
@@ -704,12 +697,6 @@ body {
   color: var(--white);
   font-size: 18px;
   padding: 11px;
-  height: 40px;
-  width: 40px;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
   border-radius: 50%;
 }
 
@@ -770,7 +757,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  margin-bottom: 0px !important;
 }
 
 .footer .social-link {
@@ -779,12 +765,6 @@ body {
   color: var(--white);
   font-size: 18px;
   border-radius: 50%;
-  height: 40px;
-  width: 40px;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
 }
 
 .footer .social-link:is(:hover, :focus) {
@@ -823,7 +803,7 @@ body {
  * responsive for larger than 575px screen
  */
 
-@media (max-width: 575px) {
+@media (min-width: 575px) {
   /**
    * CUSTOM PROPERTY
    */
@@ -860,20 +840,6 @@ body {
 
   .footer-top .container {
     grid-template-columns: 1fr 1fr;
-  }
-  .scrollbar-item {
-    width: 50%;
-  }
-  .has-scrollbar {
-    display: grid;
-    gap: 30px;
-    overflow-x: auto;
-    margin-inline: 15px;
-    padding-block-end: 40px;
-    margin-block-end: -20px;
-    scroll-snap-type: inline mandatory;
-    align-content: center;
-    justify-items: center;
   }
 }
 
@@ -968,7 +934,7 @@ body {
    */
 
   .scrollbar-item {
-    width: 50%;
+    min-width: calc(50% - 15px);
   }
 
   /**
@@ -1081,7 +1047,6 @@ body {
 
   .contact-list {
     gap: 20px;
-    margin-bottom: 0px !important;
   }
 
   .contact-item {
@@ -1099,16 +1064,11 @@ body {
 
   .header-top .social-list {
     gap: 15px;
-    margin-bottom: 0px !important;
   }
 
   .header-top .social-link {
     font-size: var(--fs-6);
     transition: var(--transition);
-    -webkit-transition: var(--transition);
-    -moz-transition: var(--transition);
-    -ms-transition: var(--transition);
-    -o-transition: var(--transition);
   }
 
   .header-top .social-link:is(:hover, :focus) {
@@ -1194,7 +1154,7 @@ body {
    */
 
   .scrollbar-item {
-    width: 25%;
+    min-width: calc(33.33% - 20px);
   }
 
   /**
@@ -1287,7 +1247,7 @@ body {
   }
 
   .scrollbar-item {
-    width: 25%;
+    min-width: calc(25% - 22.5px);
   }
 
   .has-scrollbar {
