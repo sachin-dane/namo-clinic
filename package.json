@@ -10,10 +10,10 @@
     "coverage": "ng test --no-watch --code-coverage",
     "serve": "node server",
     "lint": "ng lint",
-    "dev:ssr": "ng run angular-starter:serve-ssr",
-    "serve:ssr": "node dist/angular-starter/server/main.js",
-    "build:ssr": "ng build && ng run angular-starter:server",
-    "prerender": "ng run angular-starter:prerender"
+    "dev:ssr": "ng run namo-clinic:serve-ssr",
+    "serve:ssr": "node dist/namo-clinic/server/main.js",
+    "build:ssr": "ng build && ng run namo-clinic:server",
+    "prerender": "ng run namo-clinic:prerender"
   },
   "private": true,
   "dependencies": {

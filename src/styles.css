@@ -218,7 +218,7 @@ body {
   color: var(--white);
   font-size: var(--fs-7);
   text-transform: uppercase;
-  padding: 20px 30px;
+  padding: 15px 30px;
   text-align: center;
   border-radius: var(--radius-4);
   box-shadow: var(--shadow-4);
@@ -417,13 +417,20 @@ body {
 }
 
 .service-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 30px;
-  min-height: 100%;
+  height: 180px;
+  display: grid;
+  align-items: center;
+  gap: 25px;
+  /*min-height: 100%;
+  */
   border: 1px solid var(--light-gray);
-  border-radius: var(--radius-4);
-  padding: 30px;
+  border-radius: 10px;
+  padding: 25px;
+  justify-items: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .service-card .card-icon {
@@ -529,12 +536,14 @@ body {
   padding-block-end: 40px;
   margin-block-end: -20px;
   scroll-snap-type: inline mandatory;
+  align-items: center;
+  justify-content: center;
 }
 
-.scrollbar-item {
+/* .scrollbar-item {
   min-width: 100%;
   scroll-snap-align: start;
-}
+} */
 
 .has-scrollbar::-webkit-scrollbar {
   height: 10px;
@@ -817,7 +826,26 @@ body {
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+/**
+ * responsive for larger than 575px screen
+ */
 
+@media (max-width: 575px) {
+  .scrollbar-item {
+    width: 75%;
+  }
+  .has-scrollbar {
+    display: grid;
+    gap: 30px;
+    overflow-x: auto;
+    margin-inline: 15px;
+    padding-block-end: 40px;
+    margin-block-end: -20px;
+    scroll-snap-type: inline mandatory;
+    align-content: center;
+    justify-items: center;
+  }
+}
 /**
  * responsive for larger than 575px screen
  */
@@ -953,7 +981,7 @@ body {
    */
 
   .scrollbar-item {
-    min-width: calc(50% - 15px);
+    width: calc(50% - 15px);
   }
 
   /**
@@ -1175,7 +1203,7 @@ body {
    */
 
   .scrollbar-item {
-    min-width: calc(33.33% - 20px);
+    width: calc(40% - 20px);
   }
 
   /**
@@ -1239,7 +1267,7 @@ body {
   }
 
   .header-bottom .btn {
-    padding: 18px 30px;
+    padding: 15px 30px;
   }
 
   .header-bottom > .container {
@@ -1268,7 +1296,7 @@ body {
   }
 
   .scrollbar-item {
-    min-width: calc(25% - 22.5px);
+    width: calc(30% - 22.5px);
   }
 
   .has-scrollbar {

@@ -9,7 +9,10 @@
         <li class="contact-item">
           <i class="fa fa-envelope-o" aria-hidden="true"></i>
 
-          <a href="mailto:mahesh.namodentalcare@gmail.com" class="contact-link"
+          <a
+            rel="nofollow"
+            href="mailto:mahesh.namodentalcare@gmail.com"
+            class="contact-link"
             >mahesh.namodentalcare@gmail.com</a
           >
         </li>
@@ -17,31 +20,43 @@
         <li class="contact-item">
           <i class="fa fa-phone" aria-hidden="true"></i>
 
-          <a href="tel:+919623453244" class="contact-link">+91-9623-453-244</a>
+          <a rel="nofollow" href="tel:+919623453244" class="contact-link"
+            >+91-9623-453-244</a
+          >
         </li>
       </ul>
 
       <ul class="social-list">
         <li>
-          <a href="#" class="social-link">
+          <a rel="nofollow" href="#" class="social-link">
             <i class="fa fa-facebook" aria-hidden="true"></i>
           </a>
         </li>
 
         <li>
-          <a href="#" class="social-link">
+          <a
+            rel="nofollow"
+            target="_blank"
+            href="https://instagram.com/dr.choure_namo_dental_care?igshid=MzMyNGUyNmU2YQ=="
+            class="social-link"
+          >
             <i class="fa fa-instagram" aria-hidden="true"></i>
           </a>
         </li>
 
         <li>
-          <a href="#" class="social-link">
-            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+          <a
+            rel="nofollow"
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=9623453244&text=Hello Sir,  I would like to book appointment, please let me know the when you are available. Thank YOu"
+            class="social-link"
+          >
+            <i class="fa fa-whatsapp" aria-hidden="true"></i>
           </a>
         </li>
 
         <!-- <li>
-          <a href="#" class="social-link">
+          <a rel="nofollow" href="#" class="social-link">
             <ion-icon name="logo-youtube"></ion-icon>
           </a>
         </li> -->
@@ -51,33 +66,74 @@
 
   <div class="header-bottom" data-header>
     <div class="container">
-      <a href="#" class="logo">Dentelo.</a>
+      <a rel="nofollow" href="#" class="logo">Namo.</a>
 
       <nav class="navbar container" data-navbar>
         <ul class="navbar-list">
           <li>
-            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            <a
+              rel="nofollow"
+              href="#home"
+              class="navbar-link"
+              data-nav-link
+              (click)="navbarClick('Home Page')"
+              >Home</a
+            >
           </li>
 
           <li>
-            <a href="#service" class="navbar-link" data-nav-link>Services</a>
+            <a
+              rel="nofollow"
+              href="#service"
+              class="navbar-link"
+              (click)="navbarClick('Dental Services')"
+              data-nav-link
+              >Services</a
+            >
           </li>
 
           <li>
-            <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+            <a
+              rel="nofollow"
+              href="#about"
+              class="navbar-link"
+              (click)="navbarClick('About Us')"
+              data-nav-link
+              >About Us</a
+            >
           </li>
 
           <li>
-            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+            <a
+              rel="nofollow"
+              href="#blog"
+              class="navbar-link"
+              (click)="navbarClick('Blogs')"
+              data-nav-link
+              >Blog</a
+            >
           </li>
 
           <li>
-            <a href="#" class="navbar-link" data-nav-link>Contact</a>
+            <a
+              rel="nofollow"
+              href="#contact"
+              class="navbar-link"
+              (click)="navbarClick('Contact Us')"
+              data-nav-link
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
 
-      <a href="#" class="btn">Book appointment</a>
+      <a
+        rel="nofollow"
+        target="_blank"
+        href="https://api.whatsapp.com/send?phone=9623453244&text=Hello Sir,  I would like to book appointment, please let me know the when you are available. Thank YOu"
+        class="btn"
+        >Book appointment</a
+      >
 
       <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
         <i
@@ -96,7 +152,7 @@
 </header>
 
 <main>
-  <article>
+  <a rel="nofollow" rticle>
     <!--
         - #HERO
       -->
@@ -114,15 +170,16 @@
           <h1 class="h1 hero-title">We Are Best Dental Service</h1>
 
           <p class="hero-text">
-            Namo Dental Care is a multi-specialty Dental clinic offering a full
-            range of Dental services, such as Root Canal Treatment (RCT) and
-            Oral Surgery, We make people look beautiful. Namo Dental Care was
-            started with a vision to help people achieve the best version of
-            themselves. Our goal has always been to provide quality treatment
-            ethically and responsibly and add value to people's lives. All the
-            dental treatments at our clinic are performed by specialists who
-            have a Masters degree (MDS). We work by appointment only. It's all
-            about making our patient's lives easier and making them look good.
+            Dr. Choure's Namo Dental Care is a multi-specialty Dental clinic
+            offering a full range of Dental services, such as Root Canal
+            Treatment (RCT) and Oral Surgery, We make people look beautiful.
+            Namo Dental Care was started with a vision to help people achieve
+            the best version of themselves. Our goal has always been to provide
+            quality treatment ethically and responsibly and add value to
+            people's lives. All the dental treatments at our clinic are
+            performed by specialists who have a Masters degree (MDS). We work by
+            appointment only. It's all about making our patient's lives easier
+            and making them look good.
           </p>
 
           <!-- <form action="" class="hero-form">
@@ -141,10 +198,11 @@
 
         <figure class="hero-banner">
           <img
+            ngOptimizedImage
             src="./assets/images/hero-banner.png"
             width="587"
             height="839"
-            alt="hero banner"
+            alt="namo dental care banner"
             class="w-100"
           />
         </figure>
@@ -166,21 +224,22 @@
             <div class="service-card">
               <div class="card-icon">
                 <img
+                  ngOptimizedImage
                   src="./assets/images/service-icon-1.png"
                   width="100"
                   height="100"
                   loading="lazy"
-                  alt="service icon"
+                  alt="Root Canal"
                   class="w-100"
                 />
               </div>
 
               <div>
-                <h3 class="h3 card-title">Root Canal</h3>
+                <h3 class="h3 card-title">Root Canal Treatment</h3>
 
-                <p class="card-text">
+                <!-- <p class="card-text">
                   Aenean eleifend turpis tellus, nec laoreet metus elementum ac.
-                </p>
+                </p> -->
               </div>
             </div>
           </li>
@@ -189,21 +248,24 @@
             <div class="service-card">
               <div class="card-icon">
                 <img
+                  ngOptimizedImage
                   src="./assets/images/service-icon-2.png"
                   width="100"
                   height="100"
                   loading="lazy"
-                  alt="service icon"
+                  alt="Teeth cleaning"
                   class="w-100"
                 />
               </div>
 
               <div>
-                <h3 class="h3 card-title">Alignment Teeth</h3>
+                <h3 class="h3 card-title">
+                  Teeth cleaning by Ultrasonic machine
+                </h3>
 
-                <p class="card-text">
+                <!-- <p class="card-text">
                   Aenean eleifend turpis tellus, nec laoreet metus elementum ac.
-                </p>
+                </p> -->
               </div>
             </div>
           </li>
@@ -212,21 +274,24 @@
             <div class="service-card">
               <div class="card-icon">
                 <img
+                  ngOptimizedImage
                   src="./assets/images/service-icon-3.png"
                   width="100"
                   height="100"
                   loading="lazy"
-                  alt="service icon"
+                  alt="Braces and Alinger"
                   class="w-100"
                 />
               </div>
 
               <div>
-                <h3 class="h3 card-title">Cosmetic Teeth</h3>
+                <h3 class="h3 card-title">
+                  Orthodonitc & Orthopedic (Braces and Alinger)
+                </h3>
 
-                <p class="card-text">
+                <!-- <p class="card-text">
                   Aenean eleifend turpis tellus, nec laoreet metus elementum ac.
-                </p>
+                </p> -->
               </div>
             </div>
           </li>
@@ -234,11 +299,12 @@
           <li class="service-banner">
             <figure>
               <img
+                ngOptimizedImage
                 src="./assets/images/service-banner.png"
                 width="409"
                 height="467"
                 loading="lazy"
-                alt="service banner"
+                alt="namo dental care banner image"
                 class="w-100"
               />
             </figure>
@@ -248,21 +314,22 @@
             <div class="service-card">
               <div class="card-icon">
                 <img
+                  ngOptimizedImage
                   src="./assets/images/service-icon-4.png"
                   width="100"
                   height="100"
                   loading="lazy"
-                  alt="service icon"
+                  alt=">Pedodontic treatment"
                   class="w-100"
                 />
               </div>
 
               <div>
-                <h3 class="h3 card-title">Oral Hygiene</h3>
+                <h3 class="h3 card-title">Pedodontic treatment</h3>
 
-                <p class="card-text">
+                <!-- <p class="card-text">
                   Aenean eleifend turpis tellus, nec laoreet metus elementum ac.
-                </p>
+                </p> -->
               </div>
             </div>
           </li>
@@ -271,21 +338,22 @@
             <div class="service-card">
               <div class="card-icon">
                 <img
+                  ngOptimizedImage
                   src="./assets/images/service-icon-5.png"
                   width="100"
                   height="100"
                   loading="lazy"
-                  alt="service icon"
+                  alt="Surgical extraction"
                   class="w-100"
                 />
               </div>
 
               <div>
-                <h3 class="h3 card-title">Live Advisory</h3>
+                <h3 class="h3 card-title">Surgical extraction</h3>
 
-                <p class="card-text">
+                <!-- <p class="card-text">
                   Aenean eleifend turpis tellus, nec laoreet metus elementum ac.
-                </p>
+                </p> -->
               </div>
             </div>
           </li>
@@ -294,21 +362,93 @@
             <div class="service-card">
               <div class="card-icon">
                 <img
+                  ngOptimizedImage
                   src="./assets/images/service-icon-6.png"
                   width="100"
                   height="100"
                   loading="lazy"
-                  alt="service icon"
+                  alt="Bridge and implant"
                   class="w-100"
                 />
               </div>
 
               <div>
-                <h3 class="h3 card-title">Cavity Inspection</h3>
+                <h3 class="h3 card-title">Fixed teeth by Bridge and implant</h3>
 
-                <p class="card-text">
+                <!-- <p class="card-text">
                   Aenean eleifend turpis tellus, nec laoreet metus elementum ac.
-                </p>
+                </p> -->
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="service-card">
+              <div class="card-icon">
+                <img
+                  ngOptimizedImage
+                  src="./assets/images/service-icon-4.png"
+                  width="100"
+                  height="100"
+                  loading="lazy"
+                  alt="complete or patial denture"
+                  class="w-100"
+                />
+              </div>
+
+              <div>
+                <h3 class="h3 card-title">complete or patial denture</h3>
+
+                <!-- <p class="card-text">
+                  Aenean eleifend turpis tellus, nec laoreet metus elementum ac.
+                </p> -->
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="service-card">
+              <div class="card-icon">
+                <img
+                  ngOptimizedImage
+                  src="./assets/images/service-icon-6.png"
+                  width="100"
+                  height="100"
+                  loading="lazy"
+                  alt="Ceramic, Zerconia, metal cap"
+                  class="w-100"
+                />
+              </div>
+
+              <div>
+                <h3 class="h3 card-title">Ceramic, Zerconia, metal cap</h3>
+
+                <!-- <p class="card-text">
+                  Aenean eleifend turpis tellus, nec laoreet metus elementum ac.
+                </p> -->
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="service-card">
+              <div class="card-icon">
+                <img
+                  ngOptimizedImage
+                  src="./assets/images/service-icon-3.png"
+                  width="100"
+                  height="100"
+                  loading="lazy"
+                  alt="Tooth coloured filling"
+                  class="w-100"
+                />
+              </div>
+
+              <div>
+                <h3 class="h3 card-title">Tooth coloured filling</h3>
+
+                <!-- <p class="card-text">
+                  Aenean eleifend turpis tellus, nec laoreet metus elementum ac.
+                </p> -->
               </div>
             </div>
           </li>
@@ -324,6 +464,7 @@
       <div class="container">
         <figure class="about-banner">
           <img
+            ngOptimizedImage
             src="./assets/images/about-banner.png"
             width="470"
             height="538"
@@ -350,12 +491,14 @@
 
           <p class="section-text">
             We have expertise in all the essential and most recent dental
-            services including Root Canal, Crowns, Bridges, Dentures, Laser
-            Teeth Whitening, Wisdom Tooth Extraction, Cosmetic Laser Dentistry,
-            Pediatric Dentistry, Teeth Straightening, Cosmetic Gum Treatment.
+            services including Root Canal, Orthodontic and orthopedic treatment
+            (Braces and Alinger), Teeth cleaning by ultrasonic machine ( scaling
+            and polishing), Fixed teeth by Bridge and implant, Tooth coloured
+            filling, Pedodontic treatment, Surgical extraction, Ceramic,
+            Zerconia, metal cap available, complete or patial denture.
           </p>
 
-          <a href="#" class="btn">Read more</a>
+          <!-- <a rel="nofollow" href="#" class="btn">Read more</a> -->
         </div>
       </div>
     </section>
@@ -364,7 +507,7 @@
         - #DOCTOR
       -->
 
-    <section class="section doctor" aria-label="doctor">
+    <section class="section doctor" aria-label="doctor" id="team">
       <div class="container">
         <p class="section-subtitle text-center">Our Doctor</p>
 
@@ -378,36 +521,47 @@
                 style="--width: 460; --height: 500"
               >
                 <img
+                  ngOptimizedImage
                   src="assets/images/mahesh-photo.jpg"
                   width="460"
                   height="500"
                   loading="lazy"
-                  alt="Howard Holmes"
+                  alt="Mahesh Choure"
                   class="img-cover"
                 />
               </div>
 
               <h3 class="h3">
-                <a href="#" class="card-title">Mahesh Choure</a>
+                <a rel="nofollow" href="#" class="card-title">Mahesh Choure</a>
               </h3>
 
               <p class="card-subtitle">Orthodontist</p>
 
               <ul class="card-social-list">
                 <li>
-                  <a href="#" class="card-social-link">
+                  <a rel="nofollow" href="#" class="card-social-link">
                     <i class="fa fa-facebook-official" aria-hidden="true"></i>
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" class="card-social-link">
-                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                  <a
+                    rel="nofollow"
+                    target="_blank"
+                    href="https://api.whatsapp.com/send?phone=9623453244&text=Hello Sir,  I would like to book appointment, please let me know the when you are available. Thank YOu"
+                    class="card-social-link"
+                  >
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" class="card-social-link">
+                  <a
+                    rel="nofollow"
+                    target="_blank"
+                    href="https://instagram.com/dr.choure_namo_dental_care?igshid=MzMyNGUyNmU2YQ=="
+                    class="card-social-link"
+                  >
                     <i class="fa fa-instagram" aria-hidden="true"></i>
                   </a>
                 </li>
@@ -422,124 +576,47 @@
                 style="--width: 460; --height: 500"
               >
                 <img
+                  ngOptimizedImage
                   src="assets/images/rupali-photo.jpg"
                   width="460"
                   height="500"
                   loading="lazy"
-                  alt="Ella Thompson"
+                  alt="Rupali Choure"
                   class="img-cover"
                 />
               </div>
 
               <h3 class="h3">
-                <a href="#" class="card-title">Rupali Choure</a>
+                <a rel="nofollow" href="#" class="card-title">Rupali Choure</a>
               </h3>
 
               <p class="card-subtitle">Endodontist</p>
 
               <ul class="card-social-list">
                 <li>
-                  <a href="#" class="card-social-link">
+                  <a rel="nofollow" href="#" class="card-social-link">
                     <i class="fa fa-facebook-official" aria-hidden="true"></i>
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" class="card-social-link">
-                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                  <a
+                    rel="nofollow"
+                    target="_blank"
+                    href="https://api.whatsapp.com/send?phone=9623453244&text=Hello Sir,  I would like to book appointment, please let me know the when you are available. Thank YOu"
+                    class="card-social-link"
+                  >
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" class="card-social-link">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="scrollbar-item">
-            <div class="doctor-card">
-              <div
-                class="card-banner img-holder"
-                style="--width: 460; --height: 500"
-              >
-                <img
-                  src="./assets/images/doctor-3.png"
-                  width="460"
-                  height="500"
-                  loading="lazy"
-                  alt="Vincent Cooper"
-                  class="img-cover"
-                />
-              </div>
-
-              <h3 class="h3">
-                <a href="#" class="card-title">Vincent Cooper</a>
-              </h3>
-
-              <p class="card-subtitle">Dentist</p>
-
-              <ul class="card-social-list">
-                <li>
-                  <a href="#" class="card-social-link">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="card-social-link">
-                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="card-social-link">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="scrollbar-item">
-            <div class="doctor-card">
-              <div
-                class="card-banner img-holder"
-                style="--width: 460; --height: 500"
-              >
-                <img
-                  src="./assets/images/doctor-4.png"
-                  width="460"
-                  height="500"
-                  loading="lazy"
-                  alt="Danielle Bryant"
-                  class="img-cover"
-                />
-              </div>
-
-              <h3 class="h3">
-                <a href="#" class="card-title">Danielle Bryant</a>
-              </h3>
-
-              <p class="card-subtitle">Dentist</p>
-
-              <ul class="card-social-list">
-                <li>
-                  <a href="#" class="card-social-link">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="card-social-link">
-                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="card-social-link">
+                  <a
+                    rel="nofollow"
+                    target="_blank"
+                    href="https://instagram.com/dr.choure_namo_dental_care?igshid=MzMyNGUyNmU2YQ=="
+                    class="card-social-link"
+                  >
                     <i class="fa fa-instagram" aria-hidden="true"></i>
                   </a>
                 </li>
@@ -558,11 +635,12 @@
       <div class="container">
         <figure class="cta-banner">
           <img
+            ngOptimizedImage
             src="./assets/images/cta-banner.png"
             width="1056"
             height="1076"
             loading="lazy"
-            alt="cta banner"
+            alt="Book appointment banner"
             class="w-100"
           />
         </figure>
@@ -572,7 +650,13 @@
 
           <h2 class="h2 section-title">We Are open And Welcoming Patients</h2>
 
-          <a href="#" class="btn">Book appointment</a>
+          <a
+            rel="nofollow"
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=9623453244&text=Hello Sir,  I would like to book appointment, please let me know the when you are available. Thank YOu"
+            class="btn"
+            >Book appointment</a
+          >
         </div>
       </div>
     </section>
@@ -595,11 +679,12 @@
                 style="--width: 1180; --height: 800"
               >
                 <img
+                  ngOptimizedImage
                   src="assets/images/blog-1.jpg"
                   width="1180"
                   height="800"
                   loading="lazy"
-                  alt="Cras accumsan nulla nec lacus ultricies placerat."
+                  alt="What is root canal treatment?"
                   class="img-cover"
                 />
 
@@ -615,6 +700,7 @@
               <div class="card-content">
                 <h3 class="h3">
                   <a
+                    rel="nofollow"
                     href="https://www.medicalnewstoday.com/articles/142780"
                     target="_blank"
                     class="card-title"
@@ -630,6 +716,7 @@
                 </p>
 
                 <a
+                  rel="nofollow"
                   href="https://www.medicalnewstoday.com/articles/142780"
                   target="_blank"
                   class="card-link"
@@ -646,11 +733,12 @@
                 style="--width: 1180; --height: 800"
               >
                 <img
+                  ngOptimizedImage
                   src="assets/images/blog-2.jpg"
                   width="1180"
                   height="800"
                   loading="lazy"
-                  alt="Dras accumsan nulla nec lacus ultricies placerat."
+                  alt="What is teeth alignment?"
                   class="img-cover"
                 />
 
@@ -666,6 +754,7 @@
               <div class="card-content">
                 <h3 class="h3">
                   <a
+                    rel="nofollow"
                     href="https://barriedentist.ca/big-mouth-blog/general-dental-articles/how-to-straighten-one-tooth"
                     target="_blank"
                     class="card-title"
@@ -675,12 +764,12 @@
 
                 <p class="card-text">
                   Single tooth straightening is both possible and more common
-                  than you think. There are several treatment options and each
-                  patient must decide the lengths they are willing to go to fix
-                  one tooth.
+                  than you think. Often, one tooth can be quickly straightened
+                  with clear aligners or fast braces.
                 </p>
 
                 <a
+                  rel="nofollow"
                   href="https://barriedentist.ca/big-mouth-blog/general-dental-articles/how-to-straighten-one-tooth"
                   target="_blank"
                   class="card-link"
@@ -697,11 +786,12 @@
                 style="--width: 1180; --height: 800"
               >
                 <img
+                  ngOptimizedImage
                   src="assets/images/blog-3.jpg"
                   width="1180"
                   height="800"
                   loading="lazy"
-                  alt="Seas accumsan nulla nec lacus ultricies placerat."
+                  alt="What are the signs of cavities?"
                   class="img-cover"
                 />
 
@@ -717,6 +807,7 @@
               <div class="card-content">
                 <h3 class="h3">
                   <a
+                    rel="nofollow"
                     href="https://my.clevelandclinic.org/health/diseases/10946-cavities"
                     target="_blank"
                     class="card-title"
@@ -731,6 +822,7 @@
                 </p>
 
                 <a
+                  rel="nofollow"
                   href="https://my.clevelandclinic.org/health/diseases/10946-cavities"
                   target="_blank"
                   class="card-link"
@@ -742,18 +834,18 @@
         </ul>
       </div>
     </section>
-  </article>
+  </a>
 </main>
 
 <!--
     - #FOOTER
   -->
 
-<footer class="footer">
+<footer class="footer" id="contact">
   <div class="footer-top section">
     <div class="container">
       <div class="footer-brand">
-        <a href="#" class="logo">Namo.</a>
+        <a rel="nofollow" href="#" class="logo">Namo.</a>
 
         <p class="footer-text">
           A team of dentists working to ensure you receive the best treatment.
@@ -780,7 +872,7 @@
         </li>
 
         <li>
-          <a href="#" class="footer-link">
+          <a rel="nofollow" href="#home" class="footer-link">
             <i class="fa fa-plus" aria-hidden="true"></i>
 
             <span class="span">Home</span>
@@ -788,7 +880,7 @@
         </li>
 
         <li>
-          <a href="#" class="footer-link">
+          <a rel="nofollow" href="#about" class="footer-link">
             <i class="fa fa-plus" aria-hidden="true"></i>
 
             <span class="span">About Us</span>
@@ -796,7 +888,7 @@
         </li>
 
         <li>
-          <a href="#" class="footer-link">
+          <a rel="nofollow" href="#service" class="footer-link">
             <i class="fa fa-plus" aria-hidden="true"></i>
 
             <span class="span">Services</span>
@@ -804,15 +896,7 @@
         </li>
 
         <li>
-          <a href="#" class="footer-link">
-            <i class="fa fa-plus" aria-hidden="true"></i>
-
-            <span class="span">Project</span>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">
+          <a rel="nofollow" href="#team" class="footer-link">
             <i class="fa fa-plus" aria-hidden="true"></i>
 
             <span class="span">Our Team</span>
@@ -820,7 +904,7 @@
         </li>
 
         <li>
-          <a href="#" class="footer-link">
+          <a rel="nofollow" href="#blog" class="footer-link">
             <i class="fa fa-plus" aria-hidden="true"></i>
 
             <span class="span">Latest Blog</span>
@@ -834,7 +918,7 @@
         </li>
 
         <li>
-          <a href="#" class="footer-link">
+          <a rel="nofollow" href="#" class="footer-link">
             <i class="fa fa-plus" aria-hidden="true"></i>
 
             <span class="span">Root Canal</span>
@@ -842,42 +926,64 @@
         </li>
 
         <li>
-          <a href="#" class="footer-link">
+          <a rel="nofollow" href="#" class="footer-link">
             <i class="fa fa-plus" aria-hidden="true"></i>
 
-            <span class="span">Alignment Teeth</span>
+            <span class="span">Braces & Alignment</span>
           </a>
         </li>
 
         <li>
-          <a href="#" class="footer-link">
+          <a rel="nofollow" href="#" class="footer-link">
             <i class="fa fa-plus" aria-hidden="true"></i>
 
-            <span class="span">Cosmetic Teeth</span>
+            <span class="span">Pedodontic treatment</span>
           </a>
         </li>
 
         <li>
-          <a href="#" class="footer-link">
+          <a rel="nofollow" href="#" class="footer-link">
             <i class="fa fa-plus" aria-hidden="true"></i>
 
-            <span class="span">Oral Hygiene</span>
+            <span class="span">Teeth Cleaning By Ultrasonic</span>
           </a>
         </li>
 
         <li>
-          <a href="#" class="footer-link">
+          <a rel="nofollow" href="#" class="footer-link">
             <i class="fa fa-plus" aria-hidden="true"></i>
 
-            <span class="span">Live Advisory</span>
+            <span class="span">Fix teeth by Bridge & Implant</span>
           </a>
         </li>
 
         <li>
-          <a href="#" class="footer-link">
+          <a rel="nofollow" href="#" class="footer-link">
             <i class="fa fa-plus" aria-hidden="true"></i>
 
-            <span class="span">Cavity Inspection</span>
+            <span class="span">Tooth coloured filling</span>
+          </a>
+        </li>
+        <li>
+          <a rel="nofollow" href="#" class="footer-link">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+
+            <span class="span">Surgical Extraction</span>
+          </a>
+        </li>
+
+        <li>
+          <a rel="nofollow" href="#" class="footer-link">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+
+            <span class="span">Ceramic Zerconia, metal cap</span>
+          </a>
+        </li>
+        <li>
+          <a rel="nofollow" href="#" class="footer-link">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+
+            <span class="span">Comple or Partial denture</span>
           </a>
         </li>
       </ul>
@@ -892,9 +998,9 @@
             <i class="fa fa-map-marker" aria-hidden="true"></i>
           </div>
 
-          <address class="item-text">
+          <a rel="nofollow" ddress class="item-text">
             Rajiv Gandhi Chowk, Opp. SBI Bank, Canal Road, Beed-431122
-          </address>
+          </a>
         </li>
 
         <li class="footer-item">
@@ -902,14 +1008,18 @@
             <i class="fa fa-phone" aria-hidden="true"></i>
           </div>
 
-          <a href="tel:+917052101786" class="footer-link">+91-9623-453-244</a>
+          <a rel="nofollow" href="tel:+917052101786" class="footer-link"
+            >+91-9623-453-244</a
+          >
         </li>
         <li class="footer-item">
           <div class="item-icon">
             <i class="fa fa-phone" aria-hidden="true"></i>
           </div>
 
-          <a href="tel:+917052101786" class="footer-link">+91-9420-798-588</a>
+          <a rel="nofollow" href="tel:+917052101786" class="footer-link"
+            >+91-9420-798-588</a
+          >
         </li>
 
         <li class="footer-item">
@@ -917,13 +1027,16 @@
             <i class="fa fa-envelope-o" aria-hidden="true"></i>
           </div>
 
-          <a href="mailto:mahesh.namodentalcare@gmail.com" class="footer-link"
+          <a
+            rel="nofollow"
+            href="mailto:mahesh.namodentalcare@gmail.com"
+            class="footer-link"
             >mahesh.namodentalcare@gmail.com</a
           >
         </li>
       </ul>
     </div>
-    <div class="google-location-map-caontainer" *ngIf="apiLoaded | async">
+    <div class="google-location-map-caontainer">
       <google-map
         #myGoogleMap
         height="400px"
@@ -951,6 +1064,7 @@
       <ul class="social-list">
         <li>
           <a
+            rel="nofollow"
             class="social-link"
             href="https://www.facebook.com/sachindane4"
             target="_blank"
@@ -961,6 +1075,7 @@
 
         <li>
           <a
+            rel="nofollow"
             href="https://www.instagram.com/sachin_dane/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
             target="_blank"
             class="social-link"
@@ -971,6 +1086,7 @@
 
         <li>
           <a
+            rel="nofollow"
             href="https://in.linkedin.com/in/sachin-dane-66313983"
             class="social-link"
             target="_blank"
@@ -980,6 +1096,7 @@
         </li>
         <li>
           <a
+            rel="nofollow"
             href="https://github.com/sachin-dane"
             target="_blank"
             class="social-link"
@@ -996,6 +1113,12 @@
     - #BACK TO TOP
   -->
 
-<a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+<a
+  rel="nofollow"
+  href="#top"
+  class="back-top-btn"
+  aria-label="back to top"
+  data-back-top-btn
+>
   <i class="fa fa-caret-up" aria-hidden="true"></i>
 </a>

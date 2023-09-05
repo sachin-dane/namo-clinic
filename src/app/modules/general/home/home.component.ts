@@ -2,16 +2,15 @@ import { Component, ViewChild } from '@angular/core';
 import { environment } from '../../../../environments/environment';
 import { SeoService } from '../../../services/seo/seo.service';
 import { HttpClient } from '@angular/common/http';
-import { Observable, of } from 'rxjs';
-import { catchError, map } from 'rxjs/operators';
 import { GoogleMap } from '@angular/google-maps';
+import { CLINIC_Data } from './constant';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
-  apiLoaded: Observable<boolean>;
+  // apiLoaded: Observable<boolean>;
   name = environment.application.name;
   angular = environment.application.angular;
   bootstrap = environment.application.bootstrap;
@@ -37,26 +36,29 @@ export class HomeComponent {
   ] as any;
   infoContent = '';
   constructor(private seoService: SeoService, public httpClient: HttpClient) {
-    this.apiLoaded = httpClient
-      .jsonp(
-        'https://maps.googleapis.com/maps/api/js?key=AIzaSyAMtrD5Wtuf1AC2TY-DV5sBM3HQWgkLtXw',
-        'callback'
-      )
-      .pipe(
-        map(() => true),
-        catchError(() => of(false))
-      );
-    console.log('this.apiLoaded==>>>', this.apiLoaded);
-    const content =
-      'This application was developed with ' +
-      this.angular +
-      ' and ' +
-      this.bootstrap +
-      ' It applies Routing, Lazy loading and Progressive Web App (PWA)';
+    // this.apiLoaded = httpClient
+    //   .jsonp(
+    //     'https://maps.googleapis.com/maps/api/js?key=AIzaSyAMtrD5Wtuf1AC2TY-DV5sBM3HQWgkLtXw',
+    //     'callback'
+    //   )
+    //   .pipe(
+    //     map(() => true),
+    //     catchError(() => of(false))
+    //   );
+    // console.log('this.apiLoaded==>>>', this.apiLoaded);
+    const content = '';
 
-    const title = 'Namo Dental Care, Beed : Home Page';
+    const title = 'Home Page';
 
     this.seoService.setMetaDescription(content);
+    this.seoService.setMetaTitle(title);
+    this.seoService.addTag({
+      name: 'json+ld',
+      content: JSON.stringify(CLINIC_Data),
+    });
+  }
+
+  navbarClick(title: string) {
     this.seoService.setMetaTitle(title);
   }
 }
